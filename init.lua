@@ -25,5 +25,33 @@ require("lazy").setup({
     {
         'mfussenegger/nvim-jdtls',
         ft = 'java',
+        dependencies = 'saadparwaiz1/cmp_luasnip',
+    },
+    {
+        'hrsh7th/nvim-cmp',
+        event = 'InsertEnter',
+        version = false,
+        dependencies = {
+            'hrsh7th/cmp-nvim-lsp',
+            'L3MON4D3/LuaSnip',
+        },
+        opts = function()
+            return {
+                snippet = {
+                    expand = function(args)
+                        require'luasnip'.lsp_expand(args.body)
+                    end
+                },
+                mapping = {
+                    ['<C-c>'] = require'cmp'.mapping.abort(),
+                    ['<CR>'] = require'cmp'.mapping.confirm(),
+                    ['<C-j>'] = require'cmp'.mapping.select_next_item(),
+                    ['<C-k>'] = require'cmp'.mapping.select_prev_item(),
+                },
+                sources = {
+                    { name = 'nvim_lsp' }
+                },
+            }
+        end
     }
 })
