@@ -17,4 +17,9 @@ vim.cmd[[set expandtab tabstop=4 softtabstop=0 shiftwidth=0 smartindent]]
 
 -- Install required plugins
 require("lazy").setup({
+    {
+        'williamboman/mason.nvim',
+        cmd = { 'Mason', 'MasonLog', 'MasonInstall' },
+        opts = {}
+    }
 })
