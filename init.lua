@@ -21,5 +21,9 @@ require("lazy").setup({
         'williamboman/mason.nvim',
         cmd = { 'Mason', 'MasonLog', 'MasonInstall' },
         opts = {}
+    },
+    {
+        'mfussenegger/nvim-jdtls',
+        ft = 'java',
     }
 })
