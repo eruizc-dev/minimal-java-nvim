@@ -53,5 +53,21 @@ require("lazy").setup({
                 },
             }
         end
+    },
+    {
+        'nvim-neotest/neotest',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            'antoinemadec/FixCursorHold.nvim',
+            'nvim-treesitter/nvim-treesitter',
+            'rcasia/neotest-java',
+        },
+        opts = function()
+            return {
+                adapters = {
+                    require'neotest-java',
+                }
+            }
+        end
     }
 })
