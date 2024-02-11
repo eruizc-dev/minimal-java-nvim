@@ -8,6 +8,8 @@
   "neotest": { "branch": "master", "commit": "89a5b1fc22ee5d459262955fe564c3d14e35fd67" },
   "neotest-java": { "branch": "main", "commit": "9f28a5e4c5b54182a22e237b440a15e465c45016" },
   "nvim-cmp": { "branch": "main", "commit": "04e0ca376d6abdbfc8b52180f8ea236cbfddf782" },
+  "nvim-dap": { "branch": "master", "commit": "780fd4dd06b0744b235a520d71660c45279d9447" },
+  "nvim-dap-ui": { "branch": "master", "commit": "d845ebd798ad1cf30aa4abd4c4eff795cdcfdd4f" },
   "nvim-jdtls": { "branch": "master", "commit": "894c044034e0d5f78a22602f1440bfe70aff58ee" },
   "nvim-treesitter": { "branch": "master", "commit": "b52b298669f0813bbfbc12d07280c9e2f6f17ebc" },
   "plenary.nvim": { "branch": "master", "commit": "4f71c0c4a196ceb656c824a70792f3df3ce6bb6d" }
